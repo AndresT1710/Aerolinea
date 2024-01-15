@@ -1,18 +1,18 @@
 <mat-sidenav-container autosize="true">
     <mat-sidenav *ngIf="showSidebarContent" opened="true" mode="side">
-        <div class="elements" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
-            <div class="elemI" fxLayoutAlign="start center">
-                <mat-icon class="mat-icon-custom-color">flight_takeoff</mat-icon>
-            </div>
-            <div fxLayout="column">
-                <h3 *ngIf="expanded">Menú Aerolinea</h3>
-            </div>
+      <div class="elements" fxLayout="column" fxLayoutGap="20px">
+        <div class="elemI" fxLayoutAlign="start center">
+          <mat-icon class="mat-icon-custom-color">flight_takeoff</mat-icon>
+        </div>
+        <div fxLayout="column">
+          <h3 *ngIf="expanded">Menú Aerolínea</h3>
         </div>
         <gad-menu (onToggleExpanded)="toggleExpanded($event)"></gad-menu>
+      </div>
     </mat-sidenav>
-  <mat-sidenav-content>
+    <mat-sidenav-content fxLayout="column">
       <gad-header *ngIf="showSidebarContent"></gad-header>
       <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
-
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

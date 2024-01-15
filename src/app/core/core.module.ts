@@ -21,7 +21,7 @@ import { RouterModule } from '@angular/router';
     LoginComponent,
     HeaderComponent,
     MenuComponent
-  ],
+    ],
   imports: [
     CommonModule,
     FlexLayoutModule,

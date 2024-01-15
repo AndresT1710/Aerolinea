@@ -9,6 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { IconService } from './services/icon.service';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     CoreModule,
     MatIconModule,
     HttpClientModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
